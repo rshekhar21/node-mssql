@@ -1,0 +1,19 @@
+{
+  "name": "node-mssql",
+  "version": "1.0.0",
+  "description": "node js with sql server, crud, api etc.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./"
+  },
+  "keywords": [],
+  "author": "Raj Shekhar Singh <rshekhar21@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mssql": "^7.1.3"
+  }
+}
