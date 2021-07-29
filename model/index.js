@@ -5,6 +5,7 @@ const cnstr = cnfig.config;
 // log(cnstr);
 
 const query = (sql) => {
+  // log(sql);
   return new Promise((resolve, reject) => {
     mssql.connect(cnstr, (err) => {
       if (err) return reject(err);
