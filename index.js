@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 const app = express();
 const log = console.log;
 import router from "./routes/apis/index.js";
@@ -7,6 +8,7 @@ app.use(express.json());
 // app.use(express.urlencoded());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
+app.use(cors());
 
 app.set("view engine", "ejs");
 app.use("/api", router);
